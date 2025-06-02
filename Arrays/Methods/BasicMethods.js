@@ -77,6 +77,7 @@ Returns a new array (doens't modify the original array)
 console.log("array1: "+array1)
 console.log("array2: "+array2)
 console.log(array1.concat(array2))
+console.log("")
 
 /* .copyWithin(position:number,start:number,end?:number)
 - Copies the specified element(s) starting from the given position.
@@ -85,15 +86,45 @@ Returns the this object (basically the same reference to the original array)
 console.log("array1: "+array1)
 console.log("copyWithin(0,4): "+array1.copyWithin(0,4))
 console.log("array1: "+array1)
+console.log("")
 
-// .flat()
+/* .flat()
+- Creates a new array with sub-array elements concatenated to a specified depth. Default
+is 1.
+Returns the new array
+*/
+let array3 = [0,[1],[[2]],[[[3]]]]
+console.log("array3: ...")
+console.log(array3)
+console.log("array1.flat(1): ...")
+console.log(array3.flat(1))
+console.log("")
 
+/* .splice()
+- Used to add, delete or replace elements of the array. (DOESN'T LEAVE ANY HOLES)
+Returns a copy of the original array modified or the elements deleted.
+*/
+let start = 0
+let amount = 2 
+console.log("array1: "+array1)
+console.log("array1.splice(0,2): "+array1.splice(start,amount))
+console.log("array1: "+array1)
+array1.unshift("Rob","Josh")
+console.log("")
 
-// .splice()
+/* .slice()
+- 'Slices' starting from the first parameter to the rest of the array (or before second 
+parameter)
+Returns a new array. Doesn't modify original array
+*/
+console.log("array1: "+array1)
+console.log("array1.slice(2): "+array1.slice(2))
+console.log("array1: "+array1+" (UNMODIFIED)")
 
+/* .toSpliced()
+-
+Returns
+*/
+console.log("array1: "+array1)
 
-// .toSpliced()
-
-
-// .slice()
 

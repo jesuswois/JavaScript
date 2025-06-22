@@ -1,7 +1,8 @@
 // Asynchrone code simply refers to code which implies having to wait to complete something. A way to
 // handle this type of code is by Promises.
 
-// A promise in JavaScript is an object which represents the resolving or rejection of async code.
+// A promise in JavaScript is an object which represents the eventual completion of async code (whether
+// by resolve or rejection)
 const myPromise = new Promise((resolve, reject) => {
   // Generates a random number between 1-9
   let random = Math.round(Math.random() * 10);
